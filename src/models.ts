@@ -1,14 +1,20 @@
-export type TrackModel = {
+export type FilmModel = {
   id: string;
   title: string;
-  authorId: string;
-  thumbnail: string;
-  length: number;
-  modulesCount: number;
+  description: string;
+  director: string;
+  producer: string;
+  release_date: string;
+  rt_score: string;
+  people: string[]; 
 };
 
-export type AuthorModel = {
+export type PeopleModel = {
   id: string;
   name: string;
-  photo: string;
-}
+  gender: string;
+  age: string;
+  eye_color: string;
+  hair_color: string;
+  films: string[]; 
+};
